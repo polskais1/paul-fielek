@@ -1,8 +1,93 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  color: #ECF0F1;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  background-color: #2C3E50;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2.5em;
 }
 
 a {
-  color: #00B7FF;
+  /*color: #3498DB;*/
+  /*color: #EC4C3C;*/
+  /*color: #2980B9;*/
+}
+
+/******NAVBAR*******/
+nav {
+  height: 2em;
+  text-align: center;
+  padding-top: .8em;
+}
+
+nav a {
+  color: #ECF0F1;
+  margin: 0 5%;
+  text-decoration: none;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  transition: color .5s;
+}
+
+nav a:hover {
+  color: #EC4C3C;
+}
+
+/******BANNER******/
+
+#banner {
+  position: relative;
+  height: 600px;
+  background-image: url(http://bigappled.com/wp-content/uploads/2014/11/Brooklyn-Bridge-Night-New-York-City.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+#banner-content {
+  position: absolute;
+  width: 100%;
+  margin-top: 180px;
+  text-align: center;
+  background-color: rgba(236, 76, 60, .5);
+}
+
+#banner-content p {
+  font-size: 2em;
+  padding-left: 5%;
+  padding-right 5%;
+}
+
+/******SKILLS******/
+#skills {
+  text-align: center;
+}
+
+#skills h2 {
+  background-color: #2980B9;
+  margin: 0;
+  padding: .5em 0;
+}
+
+/******FOOTER******/
+footer {
+  text-align: center;
+}
+
+footer i {
+  color: #2980B9;
+  text-decoration: none;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  transition: color .5s;
+}
+
+footer i:hover {
+  color: #EC4C3C;
 }

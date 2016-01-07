@@ -2,10 +2,44 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <header>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <div id="banner">
+      <div id="banner-content">
+        <h1>hello</h1>
+        <p>
+          My name is Paul Fielek. I make things, mostly with code. Here's some information about me.
+        </p>
+      </div>
+    </div>
+    <div id="skills">
+      <h2>Skills</h2>
+    </div>
+    <div id="projects">
+      <div class="project"></div>
+    </div>
+    <div id="contact"></div>
+    <footer>
+      <span id="github" class="icon">
+        <a href="https://github.com/polskais1" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+      </span>
+      <span id="twitter" class="icon">
+        <a href="https://twitter.com/Polskais1" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+      </span>
+      <span id="linkedin" class="icon">
+        <a href="https://www.linkedin.com/in/paulfielek" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+      </span>
+    </footer>
   </body>
 </html>
