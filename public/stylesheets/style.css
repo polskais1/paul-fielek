@@ -107,7 +107,7 @@ footer i:hover {
   margin: 20px auto 0;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 954px) {
   #banner {
     background-size: 220%;
   }
