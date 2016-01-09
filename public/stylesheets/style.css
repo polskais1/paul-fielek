@@ -35,64 +35,24 @@ nav {
 }
 
 nav a {
-  color: #ECF0F1;
   margin: 0 5%;
+}
+
+a {
+  color: #ECF0F1;
   text-decoration: none;
   -webkit-transition: color .5s;
   -moz-transition: color .5s;
   transition: color .5s;
 }
 
-nav a:hover {
+a:hover {
   color: #EC4C3C;
 }
 
-/******BANNER******/
-#banner {
-  /*position: relative;*/
-  position: fixed;
+.nav-spacer {
   width: 100%;
-  height: 600px;
-  background-image: url("/images/brooklyn_bridge.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
-
-#banner-content {
-  position: relative;
-  top: 160px;
-  padding: 50px 0;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(236, 76, 60, .5);
-}
-
-#banner-content p {
-  font-size: 2em;
-  margin: 20px auto 0;
-}
-
-/******SKILLS******/
-#content-container {
-  position: relative;
-  top: 290px;
-  padding: 0 10%;
-  text-align: center;
-  background-color: #2980B9;
-}
-
-#skills h2 {
-  margin: 0;
-  padding: .5em 0;
-}
-
-.skill {
-  text-align: right;
-}
-
-.skill:nth-child(even) {
-  text-align: left;
+  height: 45px;
 }
 
 /******FOOTER******/
@@ -115,4 +75,93 @@ footer i {
 
 footer i:hover {
   color: #EC4C3C;
+}
+
+.footer-spacer {
+  width: 100%;
+  height: 68px;
+}
+
+/******BANNER******/
+#banner {
+  position: fixed;
+  width: 100%;
+  height: 600px;
+  background-image: url("/images/brooklyn_bridge.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+}
+
+#banner-content {
+  position: relative;
+  top: 140px;
+  padding: 50px 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(236, 76, 60, .5);
+}
+
+#banner-content p {
+  font-size: 2em;
+  margin: 20px auto 0;
+}
+
+@media (max-width: 950px) {
+  #banner {
+    background-size: 220%;
+  }
+}
+
+/******SKILLS******/
+#content-container {
+  position: relative;
+  top: 290px;
+  padding: 0 20%;
+  text-align: center;
+  background-color: #2980B9;
+}
+
+#skills h2 {
+  margin: 0;
+  padding: .5em 0;
+}
+
+.skill {
+  text-align: right;
+}
+
+.skill:nth-child(even) {
+  text-align: left;
+}
+
+/******UNITY******/
+div.content {
+  margin: auto;
+  width: 960px;
+}
+div.broken,
+div.missing {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  width: 193px;
+}
+div.broken a,
+div.missing a {
+  height: 63px;
+  position: relative;
+  top: -31px;
+}
+div.broken img,
+div.missing img {
+  border-width: 0px;
+}
+div.broken {
+  display: none;
+}
+div#unityPlayer {
+  cursor: default;
+  height: 600px;
+  width: 960px;
 }
