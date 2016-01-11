@@ -117,22 +117,35 @@ footer i:hover {
 #projects {
   background-color: white;
   color: black;
+  padding-bottom: 20px;
 }
 
-.project-image {
+.slide {
+  display: none;
+}
+
+.slide.selected {
+  display: block;
+}
+
+.slide-image {
   max-width: 800px;
 }
 
-.project p {
+.slide p {
   margin-bottom: 0;
 }
 
-.project a {
+.slide a {
   color: #2980b9;
 }
 
-.project a:hover {
+.slide a:hover {
   color: #EC4C3C;
+}
+
+#prev-slide, #next-slide {
+  cursor: pointer;
 }
 
 /******SKILLS******/
