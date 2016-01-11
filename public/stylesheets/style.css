@@ -113,13 +113,38 @@ footer i:hover {
   }
 }
 
+/******PROJECTS******/
+#projects {
+  background-color: white;
+  color: black;
+}
+
+.project-image {
+  max-width: 800px;
+}
+
+.project p {
+  margin-bottom: 0;
+}
+
+.project a {
+  color: #2980b9;
+}
+
+.project a:hover {
+  color: #EC4C3C;
+}
+
 /******SKILLS******/
 #content-container {
   position: relative;
   top: 290px;
-  padding: 0 20%;
   text-align: center;
-  background-color: #2980B9;
+}
+
+#skills {
+  background-color: #2980b9;
+  padding: 0 20%;
 }
 
 #skills h2 {
@@ -133,6 +158,17 @@ footer i:hover {
 
 .skill:nth-child(even) {
   text-align: left;
+}
+
+@media (max-width: 667px) {
+  .skill, .skill:nth-child(even) {
+    text-align: center;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /******UNITY******/
