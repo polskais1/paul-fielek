@@ -1,111 +1,30 @@
 <%- include layouts/header.ejs -%>
-<div id="banner">
-</div>
-<div id="banner-content">
-  <h1>hello</h1>
-  <p>
-  My name is Paul Fielek. I make things, mostly with code. I am currently working as a full stack developer at a social network called <a href="http://lettrs.com" target="_blank">lettrs</a>.
-  </p>
-</div>
-<div id="content-container">
-  <div id="projects">
-    <h1>projects</h1>
-    <span id="prev-slide" style="display: none"><i class="fa fa-arrow-left fa-3x"></i></span>
-    <span id="next-slide"><i class="fa fa-arrow-right fa-3x"></i></span>
-    <div class="slide selected">
-      <img class="slide-image" src="images/stamps_1.png" />
-      <p>
-      <a href="http://stamps.lettrs.com" target="_blank">Stamps</a> was created as a separate server on the <a href="http://lettrs.com" target="_blank">Lettrs</a> network. Stamps can be appended to a letter, and also shared as a separate asset. They can be purchased from within the Lettrs iOS or Android app. Please feel free to demo the content management app I created at <a href="http://stamps.lettrs.com" target="_blank">stamps.lettrs.com</a>.
-      </p>
-    </div>
 
-    <div class="slide">
-      <img class="slide-image" src="images/stamps_2.png" />
-      <p>
-        Stamps is a self service platform where brands can join and invite members into their organization.
-      </p>
-    </div>
+<svg id="welcome">
+  <rect class="swingout top-left-swingout" style="x: 0%; y: -20%" transform="rotate(45)"></rect>
+  <rect class="swingout top-right-swingout" style="x: 50%; y: 0%" transform="rotate(15)"></rect>
+  <rect class="swingout bottom-left-swingout" style="x: 0%; y: 50%"></rect>
+  <rect class="swingout bottom-right-swingout" style="x: 50%; y: 50%"></rect>
 
-    <div class="slide">
-      <img class="slide-image" src="images/stamps_3.png" />
-      <p>
-        It is its own self-contained Rails API which serves up various information to be used from within the app. It also comes with a large set of tools for creating stamp collections, arranging the order in which they appear in our app, setting price points for collections, and more.
-      </p>
-    </div>
+  <rect class="swingout top-left-swingout" style="x: 0%; y: -10%" transform="rotate(45)"></rect>
+  <rect class="swingout top-right-swingout" style="x: 50%; y: 0%"></rect>
+  <rect class="swingout bottom-left-swingout" style="x: 0%; y: 50%"></rect>
+  <rect class="swingout bottom-right-swingout" style="x: 50%; y: 50%"></rect>
 
-    <div class="slide">
-      <img class="slide-image" src="images/stamps_4.png" />
-      <p>
-        I created both the frontend and backend for this project. The entirety of the admin and self-service dashboards use only React and D3 as frontend frameworks, and JQuery for AJAX calls.
-      </p>
-    </div>
+  <rect class="swingout top-left-swingout" style="x: 0%; y: 0%" transform="rotate(45)"></rect>
+  <rect class="swingout top-right-swingout" style="x: 50%; y: 0%"></rect>
+  <rect class="swingout bottom-left-swingout" style="x: 0%; y: 50%"></rect>
+  <rect class="swingout bottom-right-swingout" style="x: 50%; y: 50%"></rect>
 
-    <div class="slide">
-      <img class="slide-image" src="images/stamps_5.png" />
-      <p>
-        Members and administrators can track the performance of their stamps using our dashboard. Graphs are rendered using D3, and date ranges can be specified using the slider tool.
-      </p>
-    </div>
-  </div>
+  <rect class="swingout top-left-swingout" style="x: 0%; y: 10%" transform="rotate(45)"></rect>
+  <rect class="swingout top-right-swingout" style="x: 50%; y: 0%"></rect>
+  <rect class="swingout bottom-left-swingout" style="x: 0%; y: 50%"></rect>
+  <rect class="swingout bottom-right-swingout" style="x: 50%; y: 50%"></rect>
 
-  <div id="skills">
-    <h1>skills</h1>
-    <div class="skill">
-      <h2>Backend</h2>
-      <h3>Ruby</h3>
-      <ul>
-        <li>Ruby on Rails</li>
-        <li>Sinatra</li>
-      </ul>
-      <h3>JavaScript</h3>
-      <ul>
-        <li>Node.js</li>
-        <li>Express</li>
-      </ul>
-      <h3>Databases</h3>
-      <ul>
-        <li>MongoDB</li>
-        <li>Redis</li>
-        <li>Postgres</li>
-        <li>SQLite</li>
-        <li>mySQL</li>
-      </ul>
-    </div>
-    <div class="skill">
-      <h2>Frontend</h2>
-      <h3>Frameworks/Libraries</h3>
-      <ul>
-        <li>React</li>
-        <li>Backbone</li>
-        <li>JQuery</li>
-      </ul>
-      <h3>Styling</h3>
-      <ul>
-        <li>SCSS</li>
-        <li>Bootstrap</li>
-        <li>Pure CSS</li>
-      </ul>
-    </div>
-    <div class="skill">
-      <h2>Games</h2>
-      <h3>Engines</h3>
-      <ul>
-        <li>Unity3D</li>
-        <li>Unreal 4</li>
-      </ul>
-    </div>
-    <div class="skill">
-      <h2>Non-Technical</h2>
-      <h3>Languages</h3>
-      <ul>
-        <li>English</li>
-        <li>Polish</li>
-        <li>French</li>
-      </ul>
-    </div>
-  </div>
+  <rect class="swingout top-left-swingout" style="x: 0%; y: 20%" transform="rotate(45)"></rect>
+  <rect class="swingout top-right-swingout" style="x: 50%; y: 0%"></rect>
+  <rect class="swingout bottom-left-swingout" style="x: 0%; y: 50%"></rect>
+  <rect class="swingout bottom-right-swingout" style="x: 50%; y: 50%"></rect>
+</svg>
 
-  <div id="contact"></div>
-  <div class="footer-spacer"></div>
-</div>
 <%- include layouts/footer.ejs %>

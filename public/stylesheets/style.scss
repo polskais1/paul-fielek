@@ -1,13 +1,15 @@
-$white: #2980B9;
-$navy-blue: #2C3E50;
-$light-blue: #3498DB;
-$red: #EC4C3C;
+$red: #ff6138;
+$yellow: #ffff9d;
+$light-green: #beeb9f;
+$mid-green: #79bd8f;
+$dark-green: #00a388;
 
-body {
+html, body {
   margin: 0 auto;
-  color: #ECF0F1;
+  height: 100%;
+  color: $red;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
-  background-color: $navy-blue;
+  background-color: $mid-green;
 }
 
 h1 {
@@ -19,215 +21,30 @@ h2 {
   font-size: 2.5em;
 }
 
-/******NAVBAR*******/
-header {
-  position: fixed;
+#welcome {
   width: 100%;
-  background-color: $navy-blue;
-  z-index: 5;
+  height: 100%;
 }
 
-nav {
-  height: 2em;
-  text-align: center;
-  padding-top: .8em;
+/** Swingouts **/
+.swingout {
+  width: 50%;
+  height: 5%;
 }
 
-nav a {
-  margin: 0 5%;
+.top-left-swingout {
+  fill: $red;
+
 }
 
-a {
-  color: #ECF0F1;
-  text-decoration: none;
-  -webkit-transition: color .5s;
-  -moz-transition: color .5s;
-  transition: color .5s;
+.top-right-swingout {
+  fill: $yellow;
 }
 
-a:hover, #prev-slide:hover, #next-slide:hover {
-  color: $red;
+.bottom-left-swingout {
+  fill: $light-green;
 }
 
-.nav-spacer {
-  width: 100%;
-  height: 45px;
-}
-
-/******FOOTER******/
-footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  background-color: $navy-blue;
-  text-align: center;
-}
-
-footer i {
-  color: $white;
-  text-decoration: none;
-  margin: 10px 30px;
-  -webkit-transition: color .5s;
-  -moz-transition: color .5s;
-  transition: color .5s;
-}
-
-footer i:hover {
-  color: $red;
-}
-
-.footer-spacer {
-  width: 100%;
-  height: 52px;
-}
-
-/******BANNER******/
-#banner {
-  position: fixed;
-  width: 100%;
-  height: 600px;
-  background-image: url("/images/brooklyn_bridge.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center top;
-}
-
-#banner-content {
-  position: relative;
-  top: 140px;
-  padding: 50px 0;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(236, 76, 60, .5);
-}
-
-#banner-content p {
-  font-size: 2em;
-  margin: 20px auto 0;
-}
-
-/******PROJECTS******/
-#projects {
-  background-color: white;
-  color: black;
-  padding-bottom: 20px;
-}
-
-.slide {
-  display: none;
-}
-
-.slide.selected {
-  display: block;
-}
-
-.slide-image {
-  margin-top: 10px;
-  max-width: 80%;
-}
-
-.slide p {
-  margin: 10px 10% 0;
-}
-
-.slide a {
-  color: $white;
-}
-
-.slide a:hover {
-  color: $red;
-}
-
-#prev-slide, #next-slide {
-  cursor: pointer;
-  position: absolute;
-  top: 200px;
-  -webkit-transition: color .5s;
-  -moz-transition: color .5s;
-  transition: color .5s;
-}
-
-#prev-slide {
-  float: left;
-  left: 20px;
-}
-
-#next-slide {
-  float: right;
-  right: 20px;
-}
-
-/******SKILLS******/
-#content-container {
-  position: relative;
-  top: 290px;
-  text-align: center;
-}
-
-#skills {
-  background-color: $white;
-  padding: 10px 20%;
-}
-
-#skills h2 {
-  margin: 0;
-  padding: .5em 0;
-}
-
-.skill {
-  text-align: right;
-}
-
-.skill:nth-child(even) {
-  text-align: left;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-@media (max-width: 667px) {
-  .skill, .skill:nth-child(even) {
-    text-align: center;
-  }
-}
-
-@media (max-width: 950px) {
-  #banner {
-    background-size: 225%;
-  }
-}
-
-/******UNITY******/
-div.content {
-  margin: auto;
-  width: 960px;
-}
-
-div.broken, div.missing {
-  margin: auto;
-  position: relative;
-  top: 50%;
-  width: 193px;
-}
-
-div.broken a, div.missing a {
-  height: 63px;
-  position: relative;
-  top: -31px;
-}
-
-div.broken img, div.missing img {
-  border-width: 0px;
-}
-
-div.broken {
-  display: none;
-}
-
-div#unityPlayer {
-  cursor: default;
-  height: 600px;
-  width: 960px;
+.bottom-right-swingout {
+  fill: $dark-green;
 }
