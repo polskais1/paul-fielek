@@ -4,47 +4,44 @@ $light-green: #beeb9f;
 $mid-green: #79bd8f;
 $dark-green: #00a388;
 
+$beige: #F2E7D2;
+$blue: #1F4780;
+$teal: #0C5878;
+$orange: #C49441;
+
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
+
 html, body {
-  margin: 0 auto;
+  background-color: $teal;
   height: 100%;
-  color: $red;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  background-color: $mid-green;
+  margin: 0 auto;
 }
 
 h1 {
+  font-family: $primary-font;
   font-size: 4em;
   margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  font-family: $secondary-font;
 }
 
 h2 {
   font-size: 2.5em;
 }
 
+/**** Welcome section ****/
 #welcome {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
-/** Swingouts **/
-.swingout {
-  width: 50%;
-  height: 5%;
-}
-
-.top-left-swingout {
-  fill: $red;
-
-}
-
-.top-right-swingout {
-  fill: $yellow;
-}
-
-.bottom-left-swingout {
-  fill: $light-green;
-}
-
-.bottom-right-swingout {
-  fill: $dark-green;
+#name {
+  background-color: $beige;
+  padding: .5em 2%;
+  position: absolute;
+  text-align: center;
 }

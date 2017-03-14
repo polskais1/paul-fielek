@@ -1,1 +1,29 @@
-html,body{margin:0 auto;height:100%;color:#ff6138;font-family:"Raleway", Helvetica, Arial, sans-serif;background-color:#79bd8f}h1{font-size:4em;margin:0}h2{font-size:2.5em}#welcome{width:100%;height:100%}.swingout{width:50%;height:5%}.top-left-swingout{fill:#ff6138}.top-right-swingout{fill:#ffff9d}.bottom-left-swingout{fill:#beeb9f}.bottom-right-swingout{fill:#00a388}
+html, body {
+  background-color: #0C5878;
+  height: 100%;
+  margin: 0 auto; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4em;
+  margin: 0;
+  padding: 0; }
+
+h2, p {
+  font-family: "Roboto", sans-serif; }
+
+h2 {
+  font-size: 2.5em; }
+
+/**** Welcome section ****/
+#welcome {
+  height: 100%;
+  width: 100%; }
+
+#name {
+  background-color: #F2E7D2;
+  padding: .5em 2%;
+  position: absolute;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
